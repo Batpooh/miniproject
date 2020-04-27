@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Login from './Login'
 import auth from '../firebase';
+import Tab from './Tab';
 
 const Admin = () => {
   const [session, setSession] = useState({
@@ -53,7 +54,8 @@ const Admin = () => {
             <button  
                
                 onClick={handleLogout}>logout</button>
-          <h1>Hello</h1>
+          <h1>WELCOME TO GUN HISTORY</h1>
+          <Tab />
         </div>
 
       ) : (

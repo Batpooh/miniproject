@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import auth from '../firebase';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import firebase from 'firebase'
+import '../App.css';
 
 const Login =({ setSession })=>{
   const [username, setUsername] = useState('')
@@ -67,7 +68,7 @@ const Login =({ setSession })=>{
     
     <div class="wrapper">
     <div class="form-signin">
-    <h2 class="form-signin-heading">Please login</h2>
+    <h2 class="form-signin-heading" id="fff">WELCOME TO GUN HISTORY</h2>
     {/* <p1>{username} {password}</p1> */}
     <input type="text" class="form-control" name="username" 
     placeholder="Email Address" 
