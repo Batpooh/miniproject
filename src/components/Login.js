@@ -56,7 +56,6 @@ const Login =({ setSession })=>{
     signInFlow: "popup",
     signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
         firebase.auth.GithubAuthProvider.PROVIDER_ID,
     ],
     callbacks: {
@@ -80,7 +79,7 @@ const Login =({ setSession })=>{
     onChange={(e)=>setPassword(e.target.value)}
     />
 
-    <button class="btn btn-success" onClick={handleLogin}> LOGIN</button>
+    <button class="btn btn-success" onClick={handleLogin}> LOGIN</button>{" "}
     <button class="btn btn-danger" onClick={handleRegister}> REGISTER</button>
     <StyledFirebaseAuth
       uiConfig={uiConfig}

@@ -1,0 +1,16 @@
+#wpn{
+    border : 1px solid white;
+}
+#op{
+    color:black;
+    border : 1px solid white;
+    padding: 25px;
+    margin-left : 600px;
+    margin-right: 600px;
+  }
+  #opmail{
+      border : 1px solid white;
+      padding: 25px;
+      margin-left: 600px;
+      margin-right: 600px;
+  }
