@@ -40,7 +40,7 @@ const Admin = () => {
       {session.isLoggedIn ? (
         <div>
           <span>
-            <h1>Welcome  {session.currentUser && session.currentUser.displayName}</h1>
+            <h1>OPERATOR NAME {session.currentUser && session.currentUser.displayName}</h1>
             {session.currentUser && session.currentUser.email}
             <br/>
             <img
@@ -51,10 +51,8 @@ const Admin = () => {
           
             <br/>
            
-            <button  
-               
-                onClick={handleLogout}>logout</button>
-          <h1>WELCOME TO GUN HISTORY</h1>
+            <button class="btn btn-danger" onClick={handleLogout}>LOGOUT</button>
+          <h1>TASK FORCE INVENTORY</h1>
           <Tab />
         </div>
 

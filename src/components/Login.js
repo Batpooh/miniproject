@@ -3,6 +3,7 @@ import auth from '../firebase';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import firebase from 'firebase'
 import '../App.css';
+import './Login.css';
 
 const Login =({ setSession })=>{
   const [username, setUsername] = useState('')
@@ -56,9 +57,7 @@ const Login =({ setSession })=>{
     signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         firebase.auth.GithubAuthProvider.PROVIDER_ID,
-        firebase.auth.EmailAuthProvider.PROVIDER_ID
     ],
     callbacks: {
       signInSuccess: () => false
@@ -68,7 +67,9 @@ const Login =({ setSession })=>{
     
     <div class="wrapper">
     <div class="form-signin">
-    <h2 class="form-signin-heading" id="fff">WELCOME TO GUN HISTORY</h2>
+    <center>
+    <img src="https://pbs.twimg.com/profile_images/874326473284431872/SnEHL7vP.jpg" height = "200" width = "200"></img>
+    <h2 class="form-signin-heading">TASK FORCE 1-4-1</h2>
     {/* <p1>{username} {password}</p1> */}
     <input type="text" class="form-control" name="username" 
     placeholder="Email Address" 
@@ -79,12 +80,13 @@ const Login =({ setSession })=>{
     onChange={(e)=>setPassword(e.target.value)}
     />
 
-    <button onClick={handleLogin}> Login</button>
-    <button onClick={handleRegister}> Register</button>
+    <button class="btn btn-success" onClick={handleLogin}> LOGIN</button>
+    <button class="btn btn-danger" onClick={handleRegister}> REGISTER</button>
     <StyledFirebaseAuth
       uiConfig={uiConfig}
       firebaseAuth={firebase.auth()}
     />
+    </center>
     </div>
   </div>
   );
