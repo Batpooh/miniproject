@@ -1,6 +1,3 @@
-#wpn{
-    border : 1px solid white;
-}
 #op{
     color:black;
     border : 1px solid white;
@@ -13,4 +10,13 @@
       padding: 25px;
       margin-left: 600px;
       margin-right: 600px;
+  }
+  .m4{
+    text-align: center;  
+    display: block;
+    margin: auto;
+  }
+  #but1{
+      margin-right: auto;
+      margin-left: auto;
   }

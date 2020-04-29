@@ -45,7 +45,7 @@ const Admin = () => {
           <img src="https://pbs.twimg.com/profile_images/874326473284431872/SnEHL7vP.jpg" height = "200" width = "200"></img>
           <br/>
           <br/>
-            <h1 id ="wpn">WELCOME TO TASAK FORCE 1-4-1 WEAPON INVENTORY</h1>
+            <h1>WELCOME TO TASAK FORCE 1-4-1 WEAPON DATABASE</h1>
             <br/>
             <h3 id="op"> OPERATOR NAME : {session.currentUser && session.currentUser.displayName}</h3>
             <h3 id="opmail"> OPERATOR ID : {session.currentUser && session.currentUser.email} </h3>
@@ -56,6 +56,7 @@ const Admin = () => {
             <br/>
             <br/>   
             <button class="btn btn-danger" onClick={handleLogout}>LOGOUT</button>
+            <br/>
             <br/>
           <h1>TASK FORCE INVENTORY</h1>
           <br/>
