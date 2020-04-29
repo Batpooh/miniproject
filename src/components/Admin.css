@@ -11,12 +11,12 @@
       margin-left: 600px;
       margin-right: 600px;
   }
-  .m4{
+  #wpname{
     text-align: center;  
     display: block;
     margin: auto;
   }
-  #but1{
-      margin-right: auto;
-      margin-left: auto;
+  #info{
+    max-width: 100px;
   }
+  
