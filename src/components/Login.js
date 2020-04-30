@@ -56,7 +56,6 @@ const Login =({ setSession })=>{
     signInFlow: "popup",
     signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.GithubAuthProvider.PROVIDER_ID,
     ],
     callbacks: {
       signInSuccess: () => false
